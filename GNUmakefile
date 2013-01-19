@@ -3,26 +3,12 @@
 NODE_MODULES := ./node_modules/
 
 BEM := $(NODE_MODULES).bin/bem
-NPM := npm
 
-ifneq (,$(findstring B,$(MAKEFLAGS)))
-	BEM_FLAGS := --force
-endif
-
-all:: $(BEM) server
-
-%:: $(BEM)
-	$(if $(findstring GNUmakefile,$@),,$(BEM) make $@ $(BEM_FLAGS))
-
-.PHONY: server
-server:: $(BEM)
-	@$(BEM) server
-
-$(BEM):: $(NODE_MODULES)
-
-$(NODE_MODULES)::
-	$(debug ---> Updating npm dependencies)
-	@$(NPM) install
+all::
+	npm install
+	cd server && npm install
+	$(BEM) make
+	node server/index.js
 
 .PHONY: clean
 clean::
