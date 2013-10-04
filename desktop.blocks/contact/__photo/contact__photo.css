@@ -1,0 +1,13 @@
+.contact__photo
+{
+    float: left;
+
+    width: 100px;
+    height: 200px;
+    margin-right: 20px;
+
+    text-indent: -1000%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}

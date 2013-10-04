@@ -1,0 +1,5 @@
+({
+    shouldDeps: [
+        { elem: 'photo-wrap' }
+    ]
+})
