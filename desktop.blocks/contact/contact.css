@@ -2,10 +2,14 @@
 {
     position: relative;
 
+    display: inline-block;
+
     width: 400px;
+    margin: 10px;
     padding: 14px;
 
     cursor: pointer;
+    vertical-align: top;
 
     border: 1px solid #CBCBC9;
     border-radius: 5px;
