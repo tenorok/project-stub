@@ -8,3 +8,14 @@
     ./node_modules/.bin/bem server
     
 Уже можно посмотреть готовую страницу: [http://localhost:8080/desktop.bundles/index/index.html](http://localhost:8080/desktop.bundles/index/index.html)
+
+## Использование BEMTREE
+
+    ./node_modules/.bin/bem make desktop.bundles/app/
+    node app.js
+
+Будет запущен express-сервер, который проводит три маршрута:
+
+* [http://localhost:3000/](/)
+* [http://localhost:3000/homer](/homer)
+* [http://localhost:3000/otto](/otto)

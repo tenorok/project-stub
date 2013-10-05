@@ -26,7 +26,7 @@ block page {
     }
 
     content: [
-        { block : 'contacts' }
+        { block : 'i-contacts' }
     ]
 
     mod error not-found, content: 'Nothing found'

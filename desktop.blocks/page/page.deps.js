@@ -3,6 +3,6 @@
         { block : 'i-bem' }
     ],
     shouldDeps : [
-        { block : 'contacts' }
+        { block : 'i-contacts' }
     ]
 })

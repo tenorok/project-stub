@@ -9,9 +9,16 @@ var server = http.createServer(app);
 var BEMHTML = require('./desktop.bundles/app/_app.bemhtml.js').BEMHTML,
     BEMTREE = require('./desktop.bundles/app/app.bemtree.js').BEMTREE;
 
-app.get('/', function(req, res) {
+function response(res) {
     BEMTREE.apply().then(function(bemjson) {
         res.send(BEMHTML.apply(bemjson));
+    });
+}
+
+['/', '/otto', '/homer'].forEach(function(route) {
+    app.get(route, function(req, res) {
+        BEMTREE.route = route;
+        response(res);
     });
 });
 

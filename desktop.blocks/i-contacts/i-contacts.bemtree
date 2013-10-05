@@ -1,10 +1,17 @@
-block('contacts').content()(function() {
+block('i-contacts').content()(function() {
+
+    var json = {
+            '/': './desktop.bundles/store/all.json',
+            '/otto': './desktop.bundles/store/otto.json',
+            '/homer': './desktop.bundles/store/homer.json'
+        },
+        route = this.data.route;
 
     return this.doAsync(function() {
 
         var promise = Vow.promise();
 
-        Fs.readFile('./desktop.bundles/store/all.json', function(error, data) {
+        Fs.readFile(json[route], function(error, data) {
             if(error) return promise.reject(new Error('API request error: ', err));
             return promise.fulfill(JSON.parse(data));
         });
