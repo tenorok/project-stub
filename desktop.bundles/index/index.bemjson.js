@@ -5,7 +5,7 @@
     head: [
         { elem: 'css', url: '_index.css', ie: false }
     ],
-    content:[
+    content: [
         {
             block: 'contact',
             photo: 'http://jing.yandex-team.ru/files/tenorok/screen01_2013-10-04_15-36-22.png',

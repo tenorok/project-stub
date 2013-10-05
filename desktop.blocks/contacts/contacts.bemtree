@@ -1,0 +1,23 @@
+block('contacts').content()(function() {
+
+    return this.doAsync(function() {
+
+        var promise = Vow.promise();
+
+        Fs.readFile('./desktop.bundles/store/all.json', function(error, data) {
+            if(error) return promise.reject(new Error('API request error: ', err));
+            return promise.fulfill(JSON.parse(data));
+        });
+
+        return promise;
+
+    }).then(function(contacts) {
+        return applyCtx(
+            contacts.map(function(contact) {
+                contact.block = 'contact';
+                return contact;
+            })
+        );
+    });
+
+});

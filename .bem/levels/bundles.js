@@ -16,6 +16,7 @@ exports.getTechs = function() {
         'browser.js+bemhtml' : join(BEMCORE_TECHS, 'browser.js+bemhtml.js'),
         'css'                : 'v2/css',
         'bemhtml'            : join(BEMCORE_TECHS, 'bemhtml.js'),
+        'bemtree'            : join(BEMCORE_TECHS, 'bemtree.js'),
         'html'               : join(BEMCORE_TECHS, 'html.js')
     };
 

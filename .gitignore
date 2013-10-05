@@ -7,4 +7,5 @@ node_modules/
 .bem/cache/
 *.bundles/*/*.*
 !*.bundles/*/*.bemjson.js
+!*.bundles/app/app.bemdecl.js
 !*.bundles/.bem/*
