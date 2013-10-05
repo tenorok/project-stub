@@ -1,0 +1,9 @@
+block('contact').elem('email')(
+    content()(function() {
+        return {
+            block: 'link',
+            url: 'mailto:' + this.ctx.content,
+            content: this.ctx.content
+        };
+    })
+);

@@ -4,6 +4,10 @@ block('contact').elem('social')(
 
     attrs()(function() {
         return { href: this.ctx.url || '#' };
+    }),
+
+    content()(function() {
+        return this.ctx.service
     })
 
 );
