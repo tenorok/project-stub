@@ -3,6 +3,7 @@ var express = require('express'),
     http = require('http');
 
 app.use(express.static(__dirname + '/desktop.bundles/app'));
+app.use(express.static(__dirname));
 
 var server = http.createServer(app);
 

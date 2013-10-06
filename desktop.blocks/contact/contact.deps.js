@@ -15,7 +15,8 @@
                 'social'
             ],
             mods: {
-                'details': ''
+                details: '',
+                customize: 'vip'
             }
         }
     ]

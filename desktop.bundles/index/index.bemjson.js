@@ -102,6 +102,7 @@
                 },
                 {
                     block: 'contact',
+                    customize: 'vip',
                     photo: 'http://jing.yandex-team.ru/files/tenorok/screen01_2013-10-05_17-20-26.png',
                     group: 'работа',
                     name: 'Чарльз Монтгомери Бёрнс',
@@ -137,6 +138,7 @@
                 },
                 {
                     block: 'contact',
+                    customize: 'vip',
                     photo: 'http://jing.yandex-team.ru/files/tenorok/screen01_2013-10-05_17-29-27.png',
                     name: 'Джозеф Фицпатрик Фицджеральд Фицэнри Квимби младший',
                     phone: '+7 232 232-22-22',
