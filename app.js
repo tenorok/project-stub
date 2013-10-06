@@ -10,16 +10,19 @@ var server = http.createServer(app);
 var BEMHTML = require('./desktop.bundles/app/_app.bemhtml.js').BEMHTML,
     BEMTREE = require('./desktop.bundles/app/app.bemtree.js').BEMTREE;
 
-function response(res) {
+function response(req, res) {
     BEMTREE.apply().then(function(bemjson) {
-        res.send(BEMHTML.apply(bemjson));
+        res.send(req.params.ext === 'bemjson'?
+            '<pre>' + JSON.stringify(bemjson, null, 4) + '</pre>' :
+            BEMHTML.apply(bemjson)
+        );
     });
 }
 
 ['/', '/otto', '/homer'].forEach(function(route) {
-    app.get(route, function(req, res) {
+    app.get(route + '.:ext?', function(req, res) {
         BEMTREE.route = route;
-        response(res);
+        response(req, res);
     });
 });
 
