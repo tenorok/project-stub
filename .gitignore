@@ -9,3 +9,4 @@ node_modules/
 !*.bundles/*/*.bemjson.js
 !*.bundles/app/app.bemdecl.js
 !*.bundles/.bem/*
+!desktop.bundles/store
