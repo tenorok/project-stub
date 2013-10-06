@@ -1,5 +1,7 @@
 block('contact')(
 
+    js()(true),
+
     mix()({ block: 'clearfix' }),
 
     content()(function() {

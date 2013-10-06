@@ -19,12 +19,13 @@ block('i-contacts').content()(function() {
         return promise;
 
     }).then(function(contacts) {
-        return applyCtx(
-            contacts.map(function(contact) {
+        return applyCtx({
+            block: 'contacts',
+            content: contacts.map(function(contact) {
                 contact.block = 'contact';
                 return contact;
             })
-        );
+        });
     });
 
 });

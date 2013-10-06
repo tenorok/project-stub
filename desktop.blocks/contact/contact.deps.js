@@ -13,7 +13,10 @@
                 'detail',
                 'links',
                 'social'
-            ]
+            ],
+            mods: {
+                'details': ''
+            }
         }
     ]
 })
