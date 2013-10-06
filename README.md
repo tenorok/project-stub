@@ -2,7 +2,7 @@
 
 ## Установка:
 
-    git clone git@github.com:tenorok/project-stub.git -b shri
+    git clone git@github.com:tenorok/shri-bem-practice.git
     cd project-stub
     npm install
     ./node_modules/.bin/bem server
