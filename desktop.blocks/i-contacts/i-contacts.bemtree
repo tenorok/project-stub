@@ -1,9 +1,9 @@
 block('i-contacts').content()(function() {
 
     var json = {
-            '/': './desktop.bundles/store/all.json',
-            '/otto': './desktop.bundles/store/otto.json',
-            '/homer': './desktop.bundles/store/homer.json'
+            '/': './store/all.json',
+            '/otto': './store/otto.json',
+            '/homer': './store/homer.json'
         },
         route = this.data.route;
 
