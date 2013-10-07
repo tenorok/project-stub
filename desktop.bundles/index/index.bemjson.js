@@ -11,7 +11,7 @@
             content: [
                 {
                     block: 'contact',
-                    photo: 'http://jing.yandex-team.ru/files/tenorok/screen01_2013-10-04_15-36-22.png',
+                    photo: 'http://tenorok.github.io/shri-bem-practice/store/homer.png',
                     group: 'семья',
                     name: 'Гомер Джей Симпсон',
                     phone: '+7 987 456-71-28',
@@ -31,7 +31,7 @@
                 },
                 {
                     block: 'contact',
-                    photo: 'http://jing.yandex-team.ru/files/tenorok/screen01_2013-10-05_16-36-54.png',
+                    photo: 'http://tenorok.github.io/shri-bem-practice/store/willy.png',
                     group: 'школа',
                     name: 'Вилли',
                     phone: '+7 126 942-33-47',
@@ -48,7 +48,7 @@
                 },
                 {
                     block: 'contact',
-                    photo: 'http://jing.yandex-team.ru/files/tenorok/screen01_2013-10-05_16-56-18.png',
+                    photo: 'http://tenorok.github.io/shri-bem-practice/store/apu.png',
                     group: 'друзья',
                     name: 'Апу Нахасапимапетилон',
                     phone: '+7 683 485-67-20',
@@ -65,7 +65,7 @@
                 },
                 {
                     block: 'contact',
-                    photo: 'http://jing.yandex-team.ru/files/tenorok/screen01_2013-10-05_17-02-46.png',
+                    photo: 'http://tenorok.github.io/shri-bem-practice/store/mo.png',
                     group: 'друзья',
                     name: 'Моррис Лестер Сизлак',
                     phone: '+7 943 344-55-74',
@@ -83,7 +83,7 @@
                 },
                 {
                     block: 'contact',
-                    photo: 'http://jing.yandex-team.ru/files/tenorok/screen01_2013-10-05_17-17-55.png',
+                    photo: 'http://tenorok.github.io/shri-bem-practice/store/otto.png',
                     group: 'школа',
                     name: 'Отто Манн',
                     phone: '+7 185 926-23-06',
@@ -103,7 +103,7 @@
                 {
                     block: 'contact',
                     customize: 'vip',
-                    photo: 'http://jing.yandex-team.ru/files/tenorok/screen01_2013-10-05_17-20-26.png',
+                    photo: 'http://tenorok.github.io/shri-bem-practice/store/monty.png',
                     group: 'работа',
                     name: 'Чарльз Монтгомери Бёрнс',
                     phone: '+7 999 666-66-66',
@@ -120,7 +120,7 @@
                 },
                 {
                     block: 'contact',
-                    photo: 'http://jing.yandex-team.ru/files/tenorok/screen01_2013-10-05_17-24-26.png',
+                    photo: 'http://tenorok.github.io/shri-bem-practice/store/skinner.png',
                     group: 'школа',
                     name: 'Сеймур Скиннер',
                     phone: '+7 934 432-22-45',
@@ -139,7 +139,7 @@
                 {
                     block: 'contact',
                     customize: 'vip',
-                    photo: 'http://jing.yandex-team.ru/files/tenorok/screen01_2013-10-05_17-29-27.png',
+                    photo: 'http://tenorok.github.io/shri-bem-practice/store/quimby.png',
                     name: 'Джозеф Фицпатрик Фицджеральд Фицэнри Квимби младший',
                     phone: '+7 232 232-22-22',
                     email: 'quimby@yandex.ru',
@@ -151,7 +151,7 @@
                 },
                 {
                     block: 'contact',
-                    photo: 'http://jing.yandex-team.ru/files/tenorok/screen01_2013-10-05_17-39-07.png',
+                    photo: 'http://tenorok.github.io/shri-bem-practice/store/burny.png',
                     name: 'Барнард Гамбл',
                     phone: '+7 954 332-36-18',
                     details: [

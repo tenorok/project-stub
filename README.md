@@ -1,5 +1,9 @@
 # Практика по [БЭМ](http://ru.bem.info) для ШРИ 2013
 
+## Результат
+
+[http://tenorok.github.io/shri-bem-practice/index/](Собранная рабочая страничка)
+
 ## Установка:
 
     git clone git@github.com:tenorok/shri-bem-practice.git
