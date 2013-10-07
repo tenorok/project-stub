@@ -34,7 +34,7 @@ block('contact')(
         return [
             {
                 elem: 'photo',
-                content: this.ctx.photo || 'http://jing.yandex-team.ru/files/tenorok/screen01_2013-10-05_14-07-38.jpeg'
+                content: this.ctx.photo || 'http://tenorok.github.io/shri-bem-practice/store/mrx.jpeg'
             },
             {
                 elem: 'group',
