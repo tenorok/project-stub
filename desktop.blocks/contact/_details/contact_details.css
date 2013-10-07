@@ -2,3 +2,8 @@
 {
     height: 200px;
 }
+
+.contact_details .contact__name
+{
+    white-space: normal;
+}
