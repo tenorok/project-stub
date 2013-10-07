@@ -1,0 +1,12 @@
+libs/
+node_modules/
+.DS_Store
+.idea
+.project
+.svn
+.bem/cache/
+*.bundles/*/*.*
+!*.bundles/*/*.bemjson.js
+!*.bundles/app/app.bemdecl.js
+!*.bundles/.bem/*
+!desktop.bundles/store
