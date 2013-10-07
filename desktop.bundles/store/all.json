@@ -1,6 +1,5 @@
 [
     {
-        "block": "contact",
         "photo": "http://jing.yandex-team.ru/files/tenorok/screen01_2013-10-04_15-36-22.png",
         "group": "семья",
         "name": "Гомер Джей Симпсон",
@@ -20,7 +19,6 @@
         }
     },
     {
-        "block": "contact",
         "photo": "http://jing.yandex-team.ru/files/tenorok/screen01_2013-10-05_16-36-54.png",
         "group": "школа",
         "name": "Вилли",
@@ -37,7 +35,6 @@
         }
     },
     {
-        "block": "contact",
         "photo": "http://jing.yandex-team.ru/files/tenorok/screen01_2013-10-05_16-56-18.png",
         "group": "друзья",
         "name": "Апу Нахасапимапетилон",
@@ -54,7 +51,6 @@
         }
     },
     {
-        "block": "contact",
         "photo": "http://jing.yandex-team.ru/files/tenorok/screen01_2013-10-05_17-02-46.png",
         "group": "друзья",
         "name": "Моррис Лестер Сизлак",
@@ -72,7 +68,6 @@
         }
     },
     {
-        "block": "contact",
         "photo": "http://jing.yandex-team.ru/files/tenorok/screen01_2013-10-05_17-17-55.png",
         "group": "школа",
         "name": "Отто Манн",
@@ -91,7 +86,6 @@
         }
     },
     {
-        "block": "contact",
         "photo": "http://jing.yandex-team.ru/files/tenorok/screen01_2013-10-05_17-20-26.png",
         "group": "работа",
         "name": "Чарльз Монтгомери Бёрнс",
@@ -108,7 +102,6 @@
         }
     },
     {
-        "block": "contact",
         "photo": "http://jing.yandex-team.ru/files/tenorok/screen01_2013-10-05_17-24-26.png",
         "group": "школа",
         "name": "Сеймур Скиннер",
@@ -126,7 +119,6 @@
         }
     },
     {
-        "block": "contact",
         "photo": "http://jing.yandex-team.ru/files/tenorok/screen01_2013-10-05_17-29-27.png",
         "name": "Джозеф Фицпатрик Фицджеральд Фицэнри Квимби младший",
         "phone": "+7 232 232-22-22",
@@ -138,7 +130,6 @@
         ]
     },
     {
-        "block": "contact",
         "photo": "http://jing.yandex-team.ru/files/tenorok/screen01_2013-10-05_17-39-07.png",
         "name": "Барнард Гамбл",
         "phone": "+7 954 332-36-18",
