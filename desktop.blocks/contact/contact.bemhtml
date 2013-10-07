@@ -12,10 +12,11 @@ block('contact')(
     content()(function() {
 
         this.ctx.details = (this.ctx.details || []).map(function(detail) {
+            var key = Object.keys(detail)[0];
             return {
                 elem: 'detail',
-                field: detail[0],
-                value: detail[1]
+                field: key,
+                value: detail[key]
             };
         });
 
