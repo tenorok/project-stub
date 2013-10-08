@@ -1,4 +1,4 @@
-modules.define('i-bem__dom', ['jquery'], function(provide, $, DOM) {
+modules.define('i-bem__dom', function(provide, DOM) {
 
 /**
  * @namespace
@@ -10,17 +10,40 @@ DOM.decl('contacts', /** @lends Contacts.prototype */ {
 
         js : {
             inited : function() {
-
-                this._contacts = this.findBlocksInside('contact');
-
-                var that = this;
-
-                this._contacts.forEach(function(contact) {
-                    contact.on('show', that.hideAllDetails.bind(that));
-                });
+                this.listenShowContact();
+                this.listenAddContact();
             }
         }
 
+    },
+
+    /**
+     * Подписаться на событие разворачивания детальной информации по контакту
+     */
+    listenShowContact : function() {
+
+        this._contacts = this.findBlocksInside('contact');
+
+        var that = this;
+        this._contacts.forEach(function(contact) {
+            contact.on('show', that.hideAllDetails.bind(that));
+        });
+    },
+
+    /**
+     * Подписаться на событие добавления контакта
+     */
+    listenAddContact : function() {
+        this.findBlockInside('add-contact').on('add', this.addContact.bind(this));
+    },
+
+    /**
+     * Добавить контакт
+     * @param {Object} e Объект события
+     * @param {Object} data Объект данных по событию
+     */
+    addContact : function(e, data) {
+        this.elem('list').append(data.html);
     },
 
     /**

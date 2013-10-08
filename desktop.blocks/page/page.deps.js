@@ -7,7 +7,7 @@
 },
 {
     mustDeps : [
-        { block : 'i-bem' }
+        { block : 'i-bem', elem: 'dom' }
     ],
     shouldDeps : [
         { block : 'contacts' }
