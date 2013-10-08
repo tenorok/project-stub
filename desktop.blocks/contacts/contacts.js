@@ -10,7 +10,14 @@ DOM.decl('contacts', /** @lends Contacts.prototype */ {
 
         js : {
             inited : function() {
+
                 this._contacts = this.findBlocksInside('contact');
+
+                var that = this;
+
+                this._contacts.forEach(function(contact) {
+                    contact.on('show', that.hideAllDetails.bind(that));
+                });
             }
         }
 
@@ -21,7 +28,7 @@ DOM.decl('contacts', /** @lends Contacts.prototype */ {
      */
     hideAllDetails : function() {
         this._contacts.forEach(function(contact) {
-            contact.hideDetails();
+            contact.hide();
         });
     }
 

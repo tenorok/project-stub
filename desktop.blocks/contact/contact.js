@@ -6,16 +6,6 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, DOM) {
  */
 DOM.decl('contact', /** @lends Contact.prototype */ {
 
-    onSetMod : {
-
-        js : {
-            inited : function() {
-                this._contacts = this.findBlockOutside('contacts');
-            }
-        }
-
-    },
-
     getDefaultParams : function() {
         return {
             slideDuration: 200
@@ -26,16 +16,16 @@ DOM.decl('contact', /** @lends Contact.prototype */ {
      * Скрыть/показать детальные данные по контакту
      * @returns {this}
      */
-    toggleDetails : function() {
-        return this.hasMod('details') ? this.hideDetails() : this.showDetails();
+    toggle : function() {
+        return this.hasMod('details') ? this.hide() : this.show();
     },
 
     /**
      * Показать детальные данные по контакту
      * @returns {this}
      */
-    showDetails : function() {
-        this._hideAllDetails();
+    show : function() {
+        this.emit('show');
         this.elem('more').slideDown(this.params.slideDuration);
         return this.setMod('details');
     },
@@ -44,17 +34,10 @@ DOM.decl('contact', /** @lends Contact.prototype */ {
      * Скрыть детальные данные по контакту
      * @returns {this}
      */
-    hideDetails : function() {
+    hide : function() {
+        this.emit('hide');
         this.elem('more').slideUp(this.params.slideDuration);
         return this.delMod('details');
-    },
-
-    /**
-     * Скрыть все детальные данные по всем контактам
-     * @private
-     */
-    _hideAllDetails : function() {
-        this._contacts && this._contacts.hideAllDetails();
     }
 
 }, /** @lends Contact */ {
@@ -63,7 +46,7 @@ DOM.decl('contact', /** @lends Contact.prototype */ {
 
         this
             .liveBindTo('click', function() {
-                this.toggleDetails();
+                this.toggle();
             })
             .liveBindTo('phone-button email-link', 'click', function(e) {
                 e.stopPropagation();
