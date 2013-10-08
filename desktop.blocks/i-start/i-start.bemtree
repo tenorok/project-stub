@@ -1,0 +1,13 @@
+match(!this.data)(function() {
+
+    this.data = {
+        bundleName: 'app',
+        pageTitle: 'Контакты',
+        route: this.ctx.route
+    };
+
+    return applyCtx({
+        block : 'page'
+    });
+
+});
