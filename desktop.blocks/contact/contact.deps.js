@@ -1,4 +1,11 @@
-({
+([{
+    tech: 'js',
+    shouldDeps: {
+        tech: 'bemhtml',
+        block: 'contact'
+    }
+},
+{
     shouldDeps: [
         {
             elems: [
@@ -20,4 +27,4 @@
             }
         }
     ]
-})
+}])

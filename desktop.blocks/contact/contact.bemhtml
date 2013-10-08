@@ -7,8 +7,6 @@ block('contact')(
         applyNext();
     }),
 
-    mix()({ block: 'clearfix' }),
-
     content()(function() {
 
         this.ctx.details = (this.ctx.details || []).map(function(detail) {

@@ -1,8 +1,15 @@
-({
+([{
+    tech: 'js',
+    shouldDeps: {
+        tech: 'bemhtml',
+        block: 'i-bem'
+    }
+},
+{
     mustDeps : [
         { block : 'i-bem' }
     ],
     shouldDeps : [
-        { block : 'i-contacts' }
+        { block : 'contacts' }
     ]
-})
+}])

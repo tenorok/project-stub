@@ -1,4 +1,4 @@
-block('i-contacts').content()(function() {
+block('contacts').content()(function() {
 
     var json = {
             '/': './store/all.json',
