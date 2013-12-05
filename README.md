@@ -7,7 +7,7 @@
 ## Установка:
 
     git clone git@github.com:tenorok/shri-bem-practice.git
-    cd project-stub
+    cd shri-bem-practice
     npm install
     ./node_modules/.bin/bem server
     
@@ -15,7 +15,7 @@
 
 ## Использование BEMTREE
 
-    ./node_modules/.bin/bem make desktop.bundles/app/
+    ./node_modules/.bin/bem make
     node app.js
 
 Будет запущен express-сервер, который проводит три маршрута:
